@@ -24,6 +24,8 @@
             android:screenOrientation="portrait"
             android:theme="@style/FullScreenTheme"
             />
+        <activity android:name=".usb.CommunicatePCActivity" />
+        <activity android:name=".usb.USBApplyPermissionActivity" />
     </application>
 
 </manifest>

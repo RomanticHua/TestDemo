@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.a10616.testdemo.usb.CommunicatePCActivity;
 import com.example.a10616.testdemo.video.VideoPlayerActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,5 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void videoPlay(View view) {
         VideoPlayerActivity.startActivity(this);
+    }
+    public void usb_pc(View view) {
+        CommunicatePCActivity.startActivity(this);
     }
 }
