@@ -20,8 +20,6 @@ import java.util.HashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static android.hardware.usb.UsbManager.ACTION_USB_DEVICE_ATTACHED;
-import static android.hardware.usb.UsbManager.ACTION_USB_DEVICE_DETACHED;
 
 
 /**
@@ -48,8 +46,8 @@ public class UsbPrinterUtil {
         mPermissionIntent = PendingIntent.getBroadcast(activity, 0, new Intent(ACTION_USB_PERMISSION), 0);
         IntentFilter filter = new IntentFilter();
         filter.addAction(ACTION_USB_PERMISSION);
-        filter.addAction(ACTION_USB_DEVICE_ATTACHED);
-        filter.addAction(ACTION_USB_DEVICE_DETACHED);
+        filter.addAction(UsbManager.ACTION_USB_DEVICE_ATTACHED);
+        filter.addAction(UsbManager.ACTION_USB_DEVICE_DETACHED);
         activity.registerReceiver(mUsbReceiver, filter);
         usbPrint();
     }
@@ -77,13 +75,13 @@ public class UsbPrinterUtil {
                 }
             }
             //当打印机连接上时自动申请权限
-            else if (ACTION_USB_DEVICE_ATTACHED.equals(action)) {
+            else if (UsbManager.ACTION_USB_DEVICE_ATTACHED.equals(action)) {
                 UsbDevice device = (UsbDevice) intent.getParcelableExtra(UsbManager.EXTRA_DEVICE);
                 if (device != null) {
                     Toast.makeText(activity, "连接USB", Toast.LENGTH_LONG).show();
                     getInstance(activity);
                 }
-            } else if (ACTION_USB_DEVICE_DETACHED.equals(action)) {
+            } else if (UsbManager.ACTION_USB_DEVICE_DETACHED.equals(action)) {
                 UsbDevice device = (UsbDevice) intent.getParcelableExtra(UsbManager.EXTRA_DEVICE);
                 if (device != null) {
                     Toast.makeText(activity, "断开USB", Toast.LENGTH_LONG).show();
@@ -106,6 +104,7 @@ public class UsbPrinterUtil {
     private void usbPrint() {
         // 取连接到设备上的USB设备集合
         usbManager = (UsbManager) activity.getSystemService(Context.USB_SERVICE);
+        //得到所有usb连接的设备
         HashMap<String, UsbDevice> map = usbManager.getDeviceList();
 
         // 没有连接设备

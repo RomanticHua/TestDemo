@@ -20,5 +20,31 @@
         android:text="usb通信pc"
         android:onClick="usb_pc"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="蓝牙"
+        android:onClick="bluetooth"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="线程池"
+        android:onClick="threadPool"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="卡顿"
+        android:onClick="block"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="线程卡顿"
+        android:onClick="threadBlock"
+        />
 
 </LinearLayout>
