@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.shuyu.gsyvideoplayer.video.StandardGSYVideoPlayer
+    <com.example.a10616.testdemo.video.CustomVideoPlayer
         android:id="@+id/video_player"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

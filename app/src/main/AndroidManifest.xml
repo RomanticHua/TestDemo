@@ -30,6 +30,12 @@
         <activity android:name=".usb.USBApplyPermissionActivity" />
         <activity android:name=".bluetooth.BluetoothActivity" />
         <activity android:name=".ThreadPoolActivity" />
+        <activity android:name=".video.FullScreenVideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreenTheme"
+
+            />
 
     </application>
 

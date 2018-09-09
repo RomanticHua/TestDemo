@@ -11,8 +11,14 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="视频播放"
+        android:text="视频播放案例"
         android:onClick="videoPlay"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="视频播放全屏"
+        android:onClick="fullScreenPlay"
         />
     <Button
         android:layout_width="match_parent"

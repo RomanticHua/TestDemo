@@ -271,7 +271,7 @@ public class UsbPrinterUtil {
 
     public void test() {
         // todo 发生错误时,是否会有异常.
-        executorService.execute(new Runnable() {
+        executorService.submit(new Runnable() {
             @Override
             public void run() {
                 openCashbox();

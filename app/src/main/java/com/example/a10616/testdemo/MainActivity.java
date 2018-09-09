@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.example.a10616.testdemo.bluetooth.BluetoothActivity;
 import com.example.a10616.testdemo.usb.CommunicatePCActivity;
+import com.example.a10616.testdemo.video.FullScreenVideoPlayerActivity;
 import com.example.a10616.testdemo.video.VideoPlayerActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void videoPlay(View view) {
         VideoPlayerActivity.startActivity(this);
+    }
+
+    public void fullScreenPlay(View view) {
+        FullScreenVideoPlayerActivity.startActivity(this);
     }
 
     public void usb_pc(View view) {
@@ -41,9 +46,11 @@ public class MainActivity extends AppCompatActivity {
         SystemClock.sleep(2000);
         Log.e(TAG, "block: end....");
     }
+
     public void threadBlock(View view) {
         Log.e(TAG, "threadBlock: start....");
         SystemClock.sleep(2000);
         Log.e(TAG, "threadBlock: end....");
     }
+
 }
