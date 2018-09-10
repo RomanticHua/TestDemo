@@ -87,4 +87,8 @@ public class MyStartView2 extends ENPlayView {
         return mCurrentState;
     }
 
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+    }
 }

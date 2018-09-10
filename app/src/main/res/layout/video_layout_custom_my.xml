@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black">
-    <!--不清楚-->
+    <!--surface容器,用来添加surface-->
     <RelativeLayout
         android:id="@+id/surface_container"
         android:layout_width="match_parent"
@@ -75,15 +75,6 @@
             android:src="@drawable/video_enlarge" />
     </LinearLayout>
 
-
-    <ImageView
-        android:id="@+id/back_tiny"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginTop="6dp"
-        android:visibility="gone" />
-
     <LinearLayout
         android:id="@+id/layout_top"
         android:layout_width="match_parent"
@@ -128,8 +119,5 @@
         android:layout_centerVertical="true"
         android:layout_gravity="center_vertical"
         />
-
-
-
 
 </RelativeLayout>
