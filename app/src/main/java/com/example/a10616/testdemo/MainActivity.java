@@ -11,6 +11,7 @@ import com.example.a10616.testdemo.usb.CommunicatePCActivity;
 import com.example.a10616.testdemo.video.FullScreenVideoPlayerActivity;
 import com.example.a10616.testdemo.video.VideoPlayerActivity;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "threadBlock: start....");
         SystemClock.sleep(2000);
         Log.e(TAG, "threadBlock: end....");
+
+
     }
 
 }

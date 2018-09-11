@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
-
-
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.example.ty.jitlibrary'//group_id,一般采用包名
 android {
-    compileSdkVersion 27
+    compileSdkVersion 26
 
 
 
@@ -33,25 +33,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-}
-
-apply plugin: 'com.novoda.bintray-release'
-publish {
-    userOrg = 'jinweihua'//jcenter账户的用户名
-//    repoName = 'maven' //仓库名,不指明,默认传到maven
-    groupId = 'com.example.ty.jinutil'//jcenter上的路径名,一般使用项目包名
-    artifactId = 'jinutil'//项目名称
-    publishVersion = '1.2.0'//版本号
-    desc = 'a library from jin '//描述,中文会乱码,应该使用英文
-    website = 'https://github.com/RomanticHua/TestDemo'//这里得填写此项目的github地址,否则不能同步到jcenter
-}
-
-tasks.withType(Javadoc) {//防止编码问题
-    options.addStringOption('Xdoclint:none', '-quiet')
-    options.addStringOption('encoding', 'UTF-8')
-    options.addStringOption('charSet', 'UTF-8')
 }
