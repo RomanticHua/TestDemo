@@ -28,6 +28,7 @@ configurations.all {
         }
     }
 }
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
@@ -38,4 +39,13 @@ dependencies {
     releaseImplementation 'com.github.markzhai:blockcanary-no-op:1.5.0'
     implementation 'com.github.RomanticHua:TestDemo:v1.0.0'
     implementation 'com.google.zxing:core:3.3.3'
+
+
+//    implementation "io.reactivex.rxjava2:rxjava:2.2.2"
+//    implementation 'com.squareup.retrofit2:retrofit:2.4.0' // retrofit
+//    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0' // rxjava2适配器
+//    implementation 'com.squareup.retrofit2:converter-gson:2.4.0' // gson转换器
+
+//    implementation 'com.google.code.gson:gson:2.8.5'
+//    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
 }

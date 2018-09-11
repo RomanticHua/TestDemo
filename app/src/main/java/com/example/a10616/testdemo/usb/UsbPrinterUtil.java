@@ -23,9 +23,25 @@ import java.util.concurrent.Executors;
 
 
 /**
- * 描述：芯烨XP-D610L USB打印
- * 创建人：zxm
- * 创建时间： 2017/12/14 on 9:19.
+ *安卓设备和USB设备连接模式:
+ USB Host : 安卓设备作为 USB 主机，所有活动均由安卓设备发起,由安卓设备供电.
+ USB Accessory : 由连接的 USB 硬件做 USB 主机，由 USB硬件供电.
+ https://blog.csdn.net/JAZZSOLDIER/article/details/73739974
+
+
+ 一个USBDevice 含有多个interface ,一个接口代表一个基本功能,一个interface含有多个 endpoint,
+ 利用endpoint来进行通信.
+
+ USB 通信最基本的形式是通过USB 设备的 端点(endpoint)，endpoint是通信的发送或者接收点，
+ 发送数据，只要把数据发送到正确的端点那里就可以了。
+ 端点也是有方向的，从usb 主机到设备称为 out 端点，从设备到主机称为in 端点。
+ USB 设备必须具有端点0，它可以作为in 端点，也可以作为out 端点.
+
+ USB endpoint 有四种类型，也就分别对应了四种不同的数据传输方式。它们是控制传输（Control Transfers），
+ 中断传输（Interrupt Data Transfers），批量传输(Bulk DataTransfers)，等时传输(Isochronous Data Transfers)。
+
+ 打印机和扫描仪属于需要利用批量传输.
+
  */
 
 public class UsbPrinterUtil {
