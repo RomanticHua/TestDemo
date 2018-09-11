@@ -52,5 +52,11 @@
         android:text="线程卡顿"
         android:onClick="threadBlock"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描"
+        android:onClick="scan"
+        />
 
 </LinearLayout>
