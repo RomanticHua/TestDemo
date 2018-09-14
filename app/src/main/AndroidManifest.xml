@@ -39,6 +39,7 @@
 
             />
         <activity android:name=".zxing.activity.ScanCodeActivity" />
+        <activity android:name=".UtilActivity" />
 
     </application>
 

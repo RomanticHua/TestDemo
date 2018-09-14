@@ -15,6 +15,8 @@ import com.example.a10616.testdemo.video.VideoPlayerActivity;
 import com.example.a10616.testdemo.zxing.activity.ScanCodeActivity;
 import com.example.ty.jitlibrary.JinUtil;
 
+import java.lang.reflect.Proxy;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,6 +62,10 @@ public class MainActivity extends AppCompatActivity {
         JinUtil.helloWorld();
     }
 
+    public void util(View view) {
+        UtilActivity.startActivity(this);
+    }
+
     public void scan(View view) {
         ScanCodeActivity.startActivityForResult(this, 0);
     }
@@ -71,5 +77,9 @@ public class MainActivity extends AppCompatActivity {
             String scanResult = data.getStringExtra(ScanCodeActivity.QR_CODE_RESULT);
             Log.e(TAG, "onActivityResult: " + scanResult);
         }
+    }
+
+    public void testProxy() {
+//        Proxy.newProxyInstance(TestApi.class.getClassLoader())
     }
 }
