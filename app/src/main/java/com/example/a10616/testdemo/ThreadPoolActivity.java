@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 
 import java.util.concurrent.ExecutorService;
@@ -82,6 +84,18 @@ public class ThreadPoolActivity extends AppCompatActivity {
         executorService.submit(task1);
         executorService.submit(task2);
         executorService.submit(task333);
+    }
+
+    // 分发按键事件
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        return super.dispatchKeyEvent(event);
+    }
+
+    // 分发触摸事件
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
     }
 
     /**
