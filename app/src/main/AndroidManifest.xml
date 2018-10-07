@@ -6,8 +6,9 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:name=".base.MyApplication"
         android:allowBackup="true"
@@ -17,11 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".video.VideoPlayerActivity"
@@ -32,7 +29,8 @@
         <activity android:name=".usb.USBApplyPermissionActivity" />
         <activity android:name=".bluetooth.BluetoothActivity" />
         <activity android:name=".ThreadPoolActivity" />
-        <activity android:name=".video.FullScreenVideoPlayerActivity"
+        <activity
+            android:name=".video.FullScreenVideoPlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/FullScreenTheme"
@@ -40,6 +38,20 @@
             />
         <activity android:name=".zxing.activity.ScanCodeActivity" />
         <activity android:name=".UtilActivity" />
+        <activity android:name=".database.activity.DataBaseTestActivity">
+
+        </activity>
+        <activity android:name=".thread.MultiThreadActivity">
+
+        </activity>
+        <activity android:name=".custom_annotation.AnnotationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
 
     </application>
 

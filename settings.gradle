@@ -1,1 +1,1 @@
-include ':app', ':jinutil', ':jitpackLibrary'
+include ':app', ':jinutil', ':jitpackLibrary', ':MyAnnoatationLib'

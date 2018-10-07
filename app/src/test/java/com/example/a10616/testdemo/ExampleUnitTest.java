@@ -2,6 +2,8 @@ package com.example.a10616.testdemo;
 
 import org.junit.Test;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 import static org.junit.Assert.*;
 
 /**
@@ -12,6 +14,9 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
+
         assertEquals(4, 2 + 2);
     }
+
+
 }

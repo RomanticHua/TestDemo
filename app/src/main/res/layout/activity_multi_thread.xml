@@ -1,70 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:background="#fff"
-    >
-
+    android:orientation="vertical">
     <Button
-        android:id="@+id/btn_video"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="视频播放案例"
-        android:onClick="videoPlay"
-        />
-    <Button
-        android:id="@+id/btn_video_full_screen"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="视频播放全屏"
-        android:onClick="fullScreenPlay"
+        android:text="第一"
+        android:onClick="first"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="usb通信pc"
-        android:onClick="usb_pc"
+        android:text="第二"
+        android:onClick="second"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="蓝牙"
-        android:onClick="bluetooth"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="线程池"
-        android:onClick="threadPool"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="卡顿"
-        android:onClick="block"
+        android:text="第三"
+        android:onClick="three"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="线程卡顿"
-        android:onClick="threadBlock"
+        android:text="yield"
+        android:onClick="yield"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="扫描"
-        android:onClick="scan"
+        android:text="interrupt1"
+        android:onClick="interrupt1"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="工具"
-        android:onClick="util"
+        android:text="interrupt2"
+        android:onClick="interrupt2"
         />
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="interrupt3"
+        android:onClick="interrupt3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="interrupt4"
+        android:onClick="interrupt4"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="interrupt5"
+        android:onClick="interrupt5"
+        />
 </LinearLayout>
