@@ -116,14 +116,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         bind.unbind();
+        Log.e(TAG, "onDestroy: local_dev修改");
     }
 
-    public void masterModify() {
-
-    }
-
-
-    public void localMofify() {
-
-    }
 }
