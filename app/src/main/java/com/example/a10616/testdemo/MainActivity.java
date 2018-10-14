@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         bind.unbind();
+        Log.e(TAG, "onDestroy: 本地DEV分支修改");
     }
 
 }
