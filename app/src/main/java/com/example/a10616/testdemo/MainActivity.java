@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     @BindView(R.id.btn_video)
-     Button btnVideo;
+    Button btnVideo;
     @BindView(R.id.btn_video_full_screen)
     Button btnVideoFullScreen;
     private Unbinder bind;
@@ -116,5 +116,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         bind.unbind();
+    }
+
+    public void masterModify() {
+
+    }
+
+
+    public void localMofify() {
+
     }
 }
