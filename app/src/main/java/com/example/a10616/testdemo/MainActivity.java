@@ -118,6 +118,10 @@ public class MainActivity extends AppCompatActivity {
         bind.unbind();
         Log.e(TAG, "onDestroy: 本地DEV分支修改");
         Log.e(TAG, "onDestroy: 主分支代码修改");
+        Log.e(TAG, "onDestroy: jwh分支修改...");
+    }
+    public void jWHMoify(){
+        Log.e(TAG, "onDestroy: jwh分支修改...");
     }
 
 }
