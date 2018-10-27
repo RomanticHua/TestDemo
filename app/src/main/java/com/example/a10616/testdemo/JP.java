@@ -7,5 +7,8 @@ public class JP {
 
     public void push(){
         Log.i(TAG, "push: ");
+
+        Log.i(TAG, "push: ");
+
     }
 }
