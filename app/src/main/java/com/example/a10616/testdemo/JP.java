@@ -1,7 +1,11 @@
 package com.example.a10616.testdemo;
 
-public class JP {
-    public void push(){
+import android.util.Log;
 
+public class JP {
+    private static final String TAG = JP.class.getSimpleName();
+
+    public void push(){
+        Log.i(TAG, "push: ");
     }
 }
