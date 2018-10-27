@@ -12,5 +12,6 @@ public class JP {
 
         Log.i(TAG, "push: ");
 
+        Log.i(TAG, "dev first: ");
     }
 }
