@@ -13,5 +13,7 @@ public class JP {
         Log.i(TAG, "push: ");
 
         Log.i(TAG, "dev first: ");
+
+        Log.i(TAG, "push: 本地撤回");
     }
 }
