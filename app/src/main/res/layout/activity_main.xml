@@ -7,12 +7,7 @@
     android:orientation="vertical"
     android:background="#fff"
     >
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="通知权限"
-        android:onClick="notify"
-        />
+
     <Button
         android:id="@+id/btn_video"
         android:layout_width="match_parent"
@@ -71,6 +66,5 @@
         android:text="工具"
         android:onClick="util"
         />
-
 
 </LinearLayout>
