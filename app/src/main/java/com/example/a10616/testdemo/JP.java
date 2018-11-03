@@ -15,9 +15,5 @@ public class JP {
         Log.i(TAG, "dev first: ");
 
         Log.i(TAG, "push: 本地撤回");
-
-        Log.d(TAG, "push: 本地cehui2222 ..");
-
-        Log.d(TAG, "push: 本地测绘333");
     }
 }
