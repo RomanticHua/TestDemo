@@ -21,5 +21,7 @@ public class Delete {
         Log.i(TAG, "apply: 333");
 
         Log.i(TAG, "apply: 444");
+
+        Log.i(TAG, "apply: 11");
     }
 }
