@@ -8,4 +8,8 @@ public interface TestApi {
     void getTime();
 
     void normalDev();
+    void normalDev222();
+    void normalDev3333333();
+
+
 }
