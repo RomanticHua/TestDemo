@@ -11,5 +11,7 @@ public class TagUtil {
         Log.i(TAG, "tag: 正式发版1.0.0");
 
         Log.i(TAG, "tag: 修复v3.0.0的bug 222222222..");
+
+        Log.i(TAG, "tag: 一顿操作猛如虎...");
     }
 }
