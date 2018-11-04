@@ -6,4 +6,6 @@ package com.example.a10616.testdemo;
 
 public interface TestApi {
     void getTime();
+
+    void normalDev();
 }
