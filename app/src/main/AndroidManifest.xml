@@ -47,13 +47,16 @@
         <activity android:name=".custom_annotation.AnnotationActivity">
 
         </activity>
-        <activity android:name=".genericity.GenericityActivity" >
+        <activity android:name=".genericity.GenericityActivity">
 
         </activity>
-        <activity android:name=".enum1.EnumActivity" >
+        <activity android:name=".enum1.EnumActivity">
+
+        </activity>
+        <activity android:name=".jackson.JacksonActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -6,11 +6,12 @@ android {
     defaultConfig {
         applicationId "com.example.a10616.testdemo"
         minSdkVersion 19
-        targetSdkVersion 22
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -68,4 +69,8 @@ dependencies {
     implementation 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v2.1.0'
     // 数据库升级
     implementation files('libs/MyAnnoatationLib.jar')
+    // 利用jackson实现多态类的解析
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.7'
+
+    implementation 'com.android.support:multidex:1.0.3'
 }
