@@ -1,6 +1,7 @@
 package com.example.a10616.testdemo.base;
 
 import android.app.Application;
+import android.support.multidex.MultiDex;
 
 import com.github.moduth.blockcanary.BlockCanary;
 
@@ -20,5 +21,6 @@ public class MyApplication extends Application {
         super.onCreate();
         instance = this;
         BlockCanary.install(this, new AppBlockCanaryContext()).start();
+        MultiDex.install(this);
     }
 }
