@@ -1,8 +1,12 @@
 package com.example.a10616.testdemo;
 
+import android.app.Notification;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.provider.Settings;
+import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -43,6 +47,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void notify(View view) {
+//        NotificationsUtils.open(this);
+        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);
+        boolean isOpened = managerCompat.areNotificationsEnabled();
+        if (!isOpened) {
+            // 根据isOpened结果，判断是否需要提醒用户跳转AppInfo页面，去打开App通知权限
+            Intent intent = new Intent();
+            intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+            Uri uri = Uri.fromParts("package", getPackageName(), null);
+            intent.setData(uri);
+            startActivity(intent);
+
+        }
+
+    }
 //    public void videoPlay(View view) {
 //        VideoPlayerActivity.startActivity(this);
 //    }
@@ -122,11 +141,13 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "onDestroy: jwh分支修改...");
 
     }
-    public void masterDestroy(){
+
+    public void masterDestroy() {
         Log.e(TAG, "onDestroy: 主分支又修改了代码");
 
     }
-    public void jWHMoify(){
+
+    public void jWHMoify() {
         Log.e(TAG, "onDestroy: jwh分支修改...");
     }
 

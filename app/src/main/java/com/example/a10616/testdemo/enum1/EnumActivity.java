@@ -18,26 +18,7 @@ public class EnumActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enum);
 
-        EnumTest test = null;
-        switch (test) {
-            case ONE:
 
-                break;
-            case TOW:
-
-                break;
-            case THREE:
-
-                break;
-            case Four:
-
-                break;
-        }
-
-        String sex = Color.BLACK.getSex();
-        Log.e(TAG, "onCreate: " + sex);
-
-        EnumTest.ONE.getTime();
     }
 
     // 枚举不能继承
