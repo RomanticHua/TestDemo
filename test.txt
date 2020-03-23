@@ -2,6 +2,8 @@ master merge a
 master merge b
 
 mater merge AA
+mater merge BB
+
 dev  修改a
 
 dev  修改b
