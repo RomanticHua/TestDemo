@@ -3,5 +3,3 @@ master pull a
 master pull b
 
 master pull c
-
-master pull d
